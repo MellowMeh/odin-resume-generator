@@ -1,10 +1,12 @@
-import "./styles.css";
+import "./style.css";
+import { Sidebar } from "./Sidebar";
+import { Resume } from "./Resume";
 
 export default function App() {
   return (
     <>
-      <Sidebar />
-      <Resume />
+      <Sidebar></Sidebar>
+      <Resume></Resume>
     </>
   );
 }
