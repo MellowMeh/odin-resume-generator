@@ -19,15 +19,14 @@ Azure - CEDFD9
   background-color: #4D685A;
   color: #1b1b1b;
   width: 100svw;
-  height: 100svh;
+  height: fit-content;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
 .sidebar {
   display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  height: 100svh;
+  height: fit-content;
 }
 
 .contact-information-form {
