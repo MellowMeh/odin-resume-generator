@@ -20,7 +20,6 @@ Azure - CEDFD9
   color: #1b1b1b;
   width: 100svw;
   height: 100svh;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
