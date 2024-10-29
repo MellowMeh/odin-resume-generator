@@ -14,6 +14,25 @@ export function ContactInformationForm() {
     })
   }
 
+    const updateEmail = (e) => {
+      setContactInformation((previousState) => {
+        return { ...previousState, email: e };
+      });
+    };
+
+    const updatePhone = (e) => {
+      setContactInformation((previousState) => {
+        return { ...previousState, phoneNumber: e };
+      });
+    };
+  
+    const updateAddress = (e) => {
+      setContactInformation((previousState) => {
+        return { ...previousState, address: e };
+      });
+    };
+  
+  
   console.log(contactInformation)
 
   return (
@@ -30,21 +49,21 @@ export function ContactInformationForm() {
         <label htmlFor="email-form">Email</label>
         <input
           value={contactInformation.email}
-          onChange={(e) => setContactInformation(e.target.value)}
+          onChange={(e) => updateEmail(e.target.value)}
           type="text"
           id="email-form"
         ></input>
         <label htmlFor="phone-number-form">Phone Number</label>
         <input
           value={contactInformation.phoneNumber}
-          onChange={(e) => setContactInformation(e.target.value)}
+          onChange={(e) => updatePhone(e.target.value)}
           type="text"
           id="phone-number-form"
         ></input>
         <label htmlFor="address-form">Address</label>
         <input
           value={contactInformation.address}
-          onChange={(e) => setContactInformation(e.target.value)}
+          onChange={(e) => updateAddress(e.target.value)}
           type="text"
           id="address-form"
         ></input>
