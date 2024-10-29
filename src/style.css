@@ -15,6 +15,10 @@ Azure - CEDFD9
   font-weight: 200;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #root {
   background-color: #4D685A;
   color: #1b1b1b;
@@ -69,4 +73,8 @@ input {
 .resume {
   display: flex;
   flex-direction: column;
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 12px;
+  border-radius: 15px;
 }
