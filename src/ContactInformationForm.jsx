@@ -7,6 +7,14 @@ export function ContactInformationForm() {
     phoneNumber: "",
     address: "",
   });
+  
+  const updateName = (e) => {
+    setContactInformation(previousState => {
+      return {...previousState, name: e}
+    })
+  }
+
+  console.log(contactInformation)
 
   return (
     <form className="contact-information-form">
@@ -15,7 +23,7 @@ export function ContactInformationForm() {
         <label htmlFor="name-form">Full Name</label>
         <input
           value={contactInformation.name}
-          onChange={(e) => setContactInformation(e.target.value)}
+          onChange={(e) => updateName(e.target.value)}
           type="text"
           id="name-form"
         ></input>
