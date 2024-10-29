@@ -11,6 +11,7 @@ export function ContactInformationForm() {
   return (
     <form className="contact-information-form">
       <div className="sidebar-container">
+        <h1 className="header">Contact Information</h1>
         <label htmlFor="name-form">Full Name</label>
         <input
           value={contactInformation.name}

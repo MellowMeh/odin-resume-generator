@@ -12,12 +12,11 @@ Azure - CEDFD9
   padding: 0px;
   border: none;
   list-style-type: none;
-  font-family: var(--default-font-family);
   font-weight: 200;
 }
 
 #root {
-  background-color: #CEDFD9;
+  background-color: #4D685A;
   color: #1b1b1b;
   width: 100svw;
   height: 100svh;
@@ -31,12 +30,43 @@ Azure - CEDFD9
   grid-template-rows: 2fr 1fr 1fr;
 }
 
-.sidebar-container {
-  background-color: whitesmoke;
+.contact-information-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+.sidebar-container {
+  background-color: #CEDFD9;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+  padding: 12px;
+  border-radius: 15px;
+}
+
+.header {
+  font-size: 28px;
+  margin: 10px;
+}
+
+label {
+  font-size: 20px;
+  margin-left: 16px;
+}
+
+input {
+  height: 28px;
+  font-size: 16px;
+  margin: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+}
 .resume {
   display: flex;
   flex-direction: column;
